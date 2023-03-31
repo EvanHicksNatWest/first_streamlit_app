@@ -37,5 +37,5 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_rows)
 
-fruit_choice2 = streamlit.text_input('What fruit would you like information about?','Kiwi')
-streamlit.write('Thanks for adding ', fruit_choice2)
+add_myfruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
+streamlit.write('Thanks for adding ', add_my_fruit)
