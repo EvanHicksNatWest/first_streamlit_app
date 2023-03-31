@@ -39,3 +39,5 @@ streamlit.text(my_data_rows)
 
 add_myfruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+insert into fruit_load_list values ("from streamlit")
