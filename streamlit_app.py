@@ -21,7 +21,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 streamlit.text(fruityvice_response)
 streamlit.header("Fruityvice Fruit Advice!")
 
-# Displays info on the selected fruit, JSON format
+streamlit.text(fruityvice_response.json())
+# Normalises JSON data on watermelon
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Above tabulated
 streamlit.dataframe(fruityvice_normalized)
